@@ -3,24 +3,58 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans' ,sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 :root {
   --bg-primary: #161a30;
   --bg-secondary: #f0ece5;
-  --bg-thridy: #31304D;
+  --bg-thridy: #31304d;
   --text-primary: #31304d;
   --text-secondary: #b6bbc4;
   --input-primary: #f0ece5;
   --input-secondary: #b6bbc4;
   --webkit-box-shadow: 0px 6px 30px 3px rgba(0, 0, 0, 0.3);
   --box-shadow: 0px 6px 30px 3px rgba(0, 0, 0, 0.3);
-  --gradient-primary: background: #161A30;
-  background: -moz-linear-gradient(45deg, #161A30 0%, #31304D 50%, #B6BBC4 100%);
-  background: -webkit-linear-gradient(45deg, #161A30 0%, #31304D 50%, #B6BBC4 100%);
-  background: linear-gradient(45deg, #161A30 0%, #31304D 50%, #B6BBC4 100%);
+  --btn-primary: #f0ece5;
+  --btn-secondary: #a7d397;
 }
+
+/* button styles */
+
+.btn-primary {
+  background-color: var(--btn-primary);
+  height: 25px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+}
+
+.btn-primary:hover {
+  background-color: var(--bg-thridy);
+}
+
+.btn-primary:active {
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: var(--btn-secondary);
+  height: 25px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+}
+
+.btn-secondary:hover {
+  background-color: var(--bg-thridy);
+}
+
+.btn-secondary:active {
+    transform: translateY(-2px);
+}
+
+/* button styles */
 
 /* navigation start */
 
@@ -40,7 +74,7 @@ body {
 }
 
 .title-nav > h2 {
-    font-family: 'Lobster', sans-serif;
+  font-family: "Lobster", sans-serif;
 }
 
 a,
@@ -154,13 +188,13 @@ nav {
 }
 
 .wrapper {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    gap: 200px;
-    color: var(--text-secondary);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  gap: 200px;
+  color: var(--text-secondary);
 }
 
 .text-center {
@@ -171,6 +205,15 @@ nav {
   flex-flow: wrap column;
   padding: 16px;
   gap: 12px;
+}
+
+.input {
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 5px;
+  font-size: large;
+  border: 1px solid;
+  text-align: center;
 }
 
 .input-style {
