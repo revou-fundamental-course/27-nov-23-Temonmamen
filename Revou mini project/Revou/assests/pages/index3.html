@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clac</title>
+    <link rel="stylesheet" href="/Revou/assests/css/content.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- navigation slide, title -->
+    <header>
+      <div class="navbar">
+        <div class="title-nav">
+          <h2>trianglequava</h2>
+        </div>
+        <div class="navigation">
+          <button class="hamburger" onclick="show()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+          </button>
+          <nav>
+            <ul>
+              <li><a href="../../index.html">HOME</a></li>
+              <li><a href="/Revou/assests/pages/index2.html" >LUAS SEGITIGA</a></li>
+              <li><a href="/Revou/assests/pages/index3.html">KELILING SEGITIGA</a></li>
+              <li><a href="/Revou/assests/pages/about.html">ABOUT</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="wrapper">
+          <div class="text-center">
+            <img
+              src="/Revou/assests/img/keliling-segitiga.svg"
+              alt="segitiga"
+              width="735"
+            />
+          </div>
+          <div class="text-style">
+            <h2>Keliling Segitiga</h2>
+            <label for="">SISI A</label>
+            <input name="sisi a" id="sisiSegA" class="input-style"/>
+            <label for="">SISI B</label>
+            <input name="sisi b" id="sisiSegB" class="input-style"/>
+            <label for="">SISI C</label>
+            <input name="sisi c" id="sisiSegC" class="input-style"/>
+            <button onclick="clac2()" class="btn-primary">hitung</button>
+            <button onclick="clacReset2()" class="btn-secondary">reset</button>
+            <label for="">=</label>
+            <p id="alertProp2" class="p-alert"></p>
+            <input name="hasil" id="hasilKel" class="input-style"/>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="/Revou/assests/js/main.js"></script>
+  </body>
+</html>
