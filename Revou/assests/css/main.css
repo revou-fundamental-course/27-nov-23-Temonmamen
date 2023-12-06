@@ -10,6 +10,7 @@ body {
   --bg-primary: #161a30;
   --bg-secondary: #f0ece5;
   --bg-thridy: #31304d;
+  --bg-forthy: #d1ccc5;
   --text-primary: #31304d;
   --text-secondary: #b6bbc4;
   --input-primary: #f0ece5;
@@ -19,15 +20,31 @@ body {
   --btn-primary: #f0ece5;
 }
 
+.bg-clear {
+  background: #161a30;
+  background: -moz-linear-gradient(
+    45deg,
+    #161a30 0%,
+    #31304d 25%,
+    #b6bbc4 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #161a30 0%,
+    #31304d 25%,
+    #b6bbc4 100%
+  );
+  background: linear-gradient(45deg, #161a30 0%, #31304d 25%, #b6bbc4 100%);
+}
 
 /* navigation start */
 
 .title-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--bg-primary);
@@ -48,11 +65,12 @@ button {
   color: var(--text-secondary);
 }
 
+
 nav {
   position: absolute;
   top: 100px;
   right: 50px;
-  width: 250px;
+  width: 280px;
 }
 
 .navigation {
@@ -80,6 +98,11 @@ nav {
   color: var(--text-primary);
 }
 
+li:hover {
+  background-color: var(--bg-forthy);
+  color: #f0ece5;
+  cursor: pointer;
+}
 /* navigation finish */
 
 /* hamburger nav start*/
@@ -175,6 +198,9 @@ nav {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border-radius: 12px;
   background-color: var(--bg-primary);
   color: var(--text-secondary);
@@ -190,21 +216,35 @@ nav {
 
 /* content box finish */
 
-.coba {
-  background: #161a30;
-  background: -moz-linear-gradient(
-    45deg,
-    #161a30 0%,
-    #31304d 25%,
-    #b6bbc4 100%
-  );
-  background: -webkit-linear-gradient(
-    45deg,
-    #161a30 0%,
-    #31304d 25%,
-    #b6bbc4 100%
-  );
-  background: linear-gradient(45deg, #161a30 0%, #31304d 25%, #b6bbc4 100%);
+/* content-footer */
+.container-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-primary);
+  width: 100%;
+  height: 90vh;
 }
 
+.wrapper-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.card-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  background-color: var(--bg-primary);
+  color: var(--text-secondary);
+  padding: 80px;
+  height: auto;
+  width: 50%;
+  cursor: pointer;
+}
+/* content-footer finish */
 

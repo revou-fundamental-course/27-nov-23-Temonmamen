@@ -10,6 +10,7 @@ body {
   --bg-primary: #161a30;
   --bg-secondary: #f0ece5;
   --bg-thridy: #31304d;
+  --bg-forthy: #d1ccc5;
   --text-primary: #31304d;
   --text-secondary: #b6bbc4;
   --input-primary: #f0ece5;
@@ -86,7 +87,7 @@ nav {
   position: absolute;
   top: 100px;
   right: 50px;
-  width: 250px;
+  width: 280px;
 }
 
 .navigation {
@@ -113,6 +114,13 @@ nav {
   text-decoration: none;
   color: var(--text-primary);
 }
+
+li:hover {
+  background-color: var(--bg-forthy);
+  color: #f0ece5;
+  cursor: pointer;
+}
+
 
 /* navigation finish */
 
@@ -232,6 +240,10 @@ nav {
 
 .input-style:focus {
   border-radius: 15px;
+}
+
+.p-alert {
+  color: red;
 }
 
 /* content box finish */
